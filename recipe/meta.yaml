@@ -13,7 +13,7 @@ source:
     - patches/0001-Making-simd-optional-for-Python-installation.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
   script:
     - python setup.py build
@@ -22,11 +22,8 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cmake
-    - make  # [unix]
   host:
     - python
-    - pip
     - setuptools
     - pyxtensor
   run:
