@@ -1,6 +1,6 @@
 {% set name = "python-gooseeye" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "a84a0644a6ad8dfa3063dc589b54ccc4d07f2c8bac654286d03413e349382f1d" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "0009d7628ecc8867221dd0922594c85cfa0d6bb1160b31f85bf644e154713e8d" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [win and vc<14]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license: GPL3
   license_family: GPL3
   license_file: LICENSE
-  summary: 'Evaluate several geometrical statistical measures on images.'
+  summary: Evaluate several geometrical statistical measures on images.
   description: |
     Library to evaluate several geometrical statistical measures on (ensembles of) 'images'
     (i.e. 1-D, 2-D, or 3-D matrices).
