@@ -1,6 +1,6 @@
 {% set name = "python-gooseeye" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "0009d7628ecc8867221dd0922594c85cfa0d6bb1160b31f85bf644e154713e8d" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "6e27843155740a95fe679b3e0e7e3173219c6010ce40b7cb9975781179318499" %}
 
 package:
   name: {{ name|lower }}
