@@ -1,6 +1,6 @@
 {% set name = "python-gooseeye" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "0009d7628ecc8867221dd0922594c85cfa0d6bb1160b31f85bf644e154713e8d" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "0639f355193bc80d873013058914206e494d6054a5f8224533552a7049d091e6" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win and vc<14]
   script: {{ PYTHON }} -m pip install . -vv
 
